@@ -27,7 +27,6 @@ void setup()
     setupPins();   // initialize the pins
     testOutputs(); // test the outputs
 
-    Serial.begin(9600);    // initialize serial communication
     gsmSerial.begin(9600); // initialize GSM serial communication
     lcd.init();            // initialize the LCD display
 }

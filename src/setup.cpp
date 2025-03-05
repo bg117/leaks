@@ -23,6 +23,8 @@ void setupPins()
     pinMode(Pins::LEFT_MOTOR, OUTPUT);
     pinMode(Pins::RIGHT_MOTOR, OUTPUT);
 
+    // turn OFF vacuum (active low relay)
+    digitalWrite(Pins::VACUUM, HIGH);
     pinMode(Pins::VACUUM, OUTPUT);
 }
 
@@ -44,7 +46,7 @@ void testOutputs()
     delay(1000);
     digitalWrite(Pins::RIGHT_MOTOR, LOW);
 
-    digitalWrite(Pins::VACUUM, HIGH);
-    delay(1000);
     digitalWrite(Pins::VACUUM, LOW);
+    delay(1000);
+    digitalWrite(Pins::VACUUM, HIGH);
 }
