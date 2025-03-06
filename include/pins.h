@@ -4,11 +4,8 @@
 
 namespace Pins
 {
-    constexpr int RX = 11;
+    constexpr int RX = 11;                                                                                                    
     constexpr int TX = 12;
-
-    constexpr int GREEN_LED = 3;
-    constexpr int RED_LED = 4;
 
     // MQ-9/6 pins (D0)
     constexpr int FRONT_MQ = A0;
@@ -29,9 +26,11 @@ namespace Pins
     constexpr int LEFT_US_ECHO = 10;
 
     // Motor pins
-    constexpr int LEFT_MOTOR = 0;
-    constexpr int RIGHT_MOTOR = 1;
+    constexpr int RIGHT_MOTOR = 3;
+    constexpr int LEFT_MOTOR = 4;
 
     // Vacuum pin
     constexpr int VACUUM = 2;
 }
+
+bool isActive(int pin);
